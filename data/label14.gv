@@ -1,0 +1,36 @@
+digraph "label14"
+{
+
+/*
+gcc -fdump-tree-all-graph does esc the control chars correctly but not always
+
+#include <stdio.h>
+int main (int argc, char *argv[])
+{
+ fputs("{}<>|",stderr);
+ return (0);
+}
+
+but few tree dot output files are incorrect empty files with only two '}'
+when the same rtl dump data is correct. toedoe.
+*/
+
+	fn_0_basic_block_2 [shape=record,style=filled,fillcolor=lightgrey,label="{ FREQ:0 |\<bb\ 2\>:\l\
+|stderr.0_1\ =\ stderr;\l\
+|__builtin_fwrite\ (\"\{\}\",\ 1,\ 2,\ stderr.0_1);\l\
+|_2\ =\ 0;\l\
+}"];
+
+	fn_0_basic_block_2a [shape=record,style=filled,fillcolor=lightgrey,label="{ FREQ:0 |\<bb\ 2\>:\l\
+|stderr.0\ =\ stderr;\l\
+|__builtin_fwrite\ (\"\{\}\<\>\|\",\ 1,\ 5,\ stderr.0);\l\
+|D.2203\ =\ 0;\l\
+}"];
+
+	fn_0_basic_block_2b [shape=record,style=filled,fillcolor=lightgrey,label="{ FREQ:0 |\<bb\ 2\>:\l\
+|stderr.0\ =\ stderr;\l\
+|__builtin_fwrite\ (\"\{\}\<\>\|\\\",\ 1,\ 6,\ stderr.0);\l\
+|D.2203\ =\ 0;\l\
+}"];
+
+}

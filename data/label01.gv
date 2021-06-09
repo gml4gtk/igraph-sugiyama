@@ -1,0 +1,4 @@
+digraph "label01"
+{
+ "aa"[label="labelaa"]; /* default shape with label */
+}

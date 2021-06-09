@@ -1,0 +1,40 @@
+#!/bin/sh -x
+# /* -*- mode: C -*-  */
+# /* 
+#    IGraph library.
+#    Copyright (C) 2003-2012  Gabor Csardi <csardi.gabor@gmail.com>
+#    334 Harvard street, Cambridge, MA 02139 USA
+#    
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#    
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#    
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 
+#    02110-1301 USA
+# 
+# */
+# 
+rm -v -f ./O1
+rm -v -f ./O2
+#valgrind --tool=memcheck -v --track-origins=yes  ./sugi 1>O1 2>O2
+valgrind --tool=memcheck -v --leak-check=full --show-leak-kinds=all --show-reachable=yes --track-origins=yes  ./sugi 1>O1 2>O2
+# should print no memory leakge and no reachable pointers
+# output files are O1 and O2
+# this may conflict with gcc fsanitize option
+
+# when gtk gui is active log files have issues about gtk+ and cairo libs
+
+# timing
+# valgrind --tool=callgrind ./sugi
+# callgrind_annotate --auto=yes callgrind.out.4328 >0O
+
+
+# end

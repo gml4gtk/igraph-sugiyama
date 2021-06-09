@@ -1,0 +1,6 @@
+digraph "label13"
+{
+    /* '|' is vertical separator and '| ' horizontal  */
+  "aa" [shape="record",label="{left}|{ middle|right}"];
+
+}

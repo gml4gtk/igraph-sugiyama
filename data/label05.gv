@@ -1,0 +1,4 @@
+digraph "label05"
+{
+ "aa"[shape="record",label="{labelaa|labelbbb}"]; /* record shape with label */
+}

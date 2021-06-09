@@ -1,0 +1,13 @@
+digraph "label11"
+{
+ "aa"[shape="record",label="{labelaa|\
+\ra|\
+a\r|\
+a\rb\l|\
+text}"];
+
+    /* text-align modifier must be after the text
+     * there can be muliple text with different
+     * text-align modifiers as in 'a\rb\l'
+     */
+}

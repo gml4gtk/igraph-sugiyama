@@ -1,0 +1,6 @@
+digraph "label16"
+{
+    /* hits a bug in few graphviz versions */
+  "aa" [shape="record",label="{\"}"];
+  "ab" [label="\""];
+}

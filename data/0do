@@ -1,0 +1,10 @@
+#!/bin/bash
+
+rm -v -f *.png
+
+for i in *.gv
+do
+    echo $i
+    dot -Tpng $i >$i.png
+done;
+

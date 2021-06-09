@@ -1,0 +1,5 @@
+digraph "label07"
+{
+ /* for other shapes the format chars appear literally */
+ "aa"[shape="box",label="{labelaa|labelbbb}"]; /* box shape with label */
+}

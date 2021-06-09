@@ -1,0 +1,5 @@
+digraph "label12"
+{
+    /* there can be endless pointless braces as below used */
+ "aa"[shape="record",label="{{{{labelaa}}}}"];
+}

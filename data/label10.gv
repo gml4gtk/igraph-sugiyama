@@ -1,0 +1,10 @@
+digraph "label10" {
+    /* '&#92; ' adds literal space */
+s1 [shape="record",label="<f0> left|<f1> mid&#92; dle|<f2> right"];
+	/* f0 f1 are connections */
+s2 [shape="record",label="<f0> one|<f1> two"];
+	/* &#92;n adds literal \n */
+s3 [shape="record",label="hi&#92;nLinux |{ b |{c|<here> d|e}| f}| g | h"];
+s1:f1 -> s2:f0;
+s1:f2 -> s3:here;
+} 

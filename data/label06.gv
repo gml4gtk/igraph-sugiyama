@@ -1,0 +1,5 @@
+digraph "label06"
+{
+ /* syntax error bad label format and falls back to "aa" as label text */
+ "aa"[shape="record",label="{labelaa}{labelbbb}"]; /* record shape with label */
+}

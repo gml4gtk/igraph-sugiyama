@@ -1,0 +1,4 @@
+digraph "label00"
+{
+ "aa"; /* no label at all */
+}

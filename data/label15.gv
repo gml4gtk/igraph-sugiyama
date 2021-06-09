@@ -1,0 +1,6 @@
+digraph "label15"
+{
+    /* contorl chars '{} <>|' need esc when literally used */
+  "aa" [shape="record",label="{\{\}\ \<\>\|}"];
+
+}

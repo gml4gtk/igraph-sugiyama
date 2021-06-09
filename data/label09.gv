@@ -1,0 +1,27 @@
+digraph "label09"
+{
+ "aa"[shape="record",label="{labelaa|\
+a\l|\
+a\n|\
+a\r|\
+text}"]; /* record shape with label gcc style, \l text-left, \n text-center and \r text-right justify */
+	/* gcc data example */
+	fn_0_basic_block_5 [shape=record,style=filled,fillcolor=lightgrey,label="{\ \ \ 16:\ L16:\l\
+|\ \ \ 17:\ NOTE_INSN_BASIC_BLOCK\ 5\l\
+|\ \ \ 18:\ r63:SI=[r53:SI]\r\
+|\ \ \ 19:\ r60:SI=[r63:SI+0x1c]\l\
+|\ \ \ 20:\ r64:SI=[r53:SI]\l\
+|\ \ \ 21:\ r61:SI=[r64:SI+0x8]\l\
+|\ \ \ 22:\ [r56:SI+0x14]=r60:SI\l\
+|\ \ \ 23:\ [r56:SI+0x10]=r61:SI\l\
+|\ \ \ 24:\ r65:SI=[r53:SI]\l\
+|\ \ \ 25:\ [r56:SI+0xc]=r65:SI\l\
+|\ \ \ 26:\ [r56:SI+0x8]=`__FUNCTION__.3275'\l\
+|\ \ \ 27:\ [r56:SI+0x4]=`*.LC1'\l\
+|\ \ \ 28:\ r66:SI=[r53:SI]\l\
+|\ \ \ 29:\ [r56:SI]=r66:SI\l\
+|\ \ \ 30:\ call\ [`mywrapped_pr']\ argc:0x18\l\
+|\ \ \ 31:\ r59:SI=0\l\
+}"];
+    /* '\ ' insert literal space */
+}
